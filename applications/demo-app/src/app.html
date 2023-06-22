@@ -1,6 +1,7 @@
 <template>
   <h1>${message}</h1>
-  <name-card name="Mike">
+  <name-card name.bind="counter">
 
   </name-card>
+  <button click.delegate="onButtonClick()">click me</button>
 </template>
