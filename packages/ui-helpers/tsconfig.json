@@ -1,0 +1,28 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "sourceRoot": "src",
+    "rootDir": "src",
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "src/*"
+      ]
+    },
+    "outDir": "dist"
+  },
+  "include": [
+    "src",
+    "types"
+  ],
+  "references": [
+    {
+      "path": "../common-ui"
+    },
+    {
+      "path": "../common-utilities"
+    }
+  ]
+}

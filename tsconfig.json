@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "paths": {
+      "@control-set/*": [
+        "/src"
+      ]
+    },
+    "baseUrl": "."
+  },
+  "references": [
+    {
+      "path": "applications/demo-app"
+    },
+    {
+      "path": "packages/common-ui"
+    },
+    {
+      "path": "packages/common-utilities"
+    },
+    {
+      "path": "packages/ui-helpers"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "extends": "../tsconfig.json",
+  "compileOnSave": false,
+  "compilerOptions": {
+    "composite": false,
+    "rootDir": ".",
+    "outDir": "./dist",
+    "sourceRoot": "src",
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "src/*"
+      ]
+    },
+    "target": "ES5",
+    "sourceMap": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "references": [
+    {
+      "path": "../../packages/ui-helpers"
+    }
+  ]
+}

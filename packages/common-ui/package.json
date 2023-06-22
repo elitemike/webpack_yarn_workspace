@@ -1,0 +1,21 @@
+{
+  "name": "@common/ui",
+  "description": "Common UI components",
+  "version": "0.1.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "package-build": "run-p build",
+    "build": "run-p 'build:*'",
+    "build:clean": "rimraf dist tsconfig.tsbuildinfo",
+    "build:ts": "tsc --build",
+    "build:rest": "cpx \"./src/**/*.{html,scss}\" dist",
+    "watch": "run-p 'watch:*'",
+    "watch:ts": "tsc --build --watch",
+    "watch:rest": "cpx \"./src/**/*.{html,scss}\" dist --watch"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ]
+}
