@@ -1,13 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Math = void 0;
-var Math = (function () {
-    function Math() {
+exports.MathHelpers = void 0;
+var MathHelpers = (function () {
+    function MathHelpers() {
     }
-    Math.prototype.add = function (number1, number2) {
+    MathHelpers.add = function (number1, number2) {
         return number1 + number2;
     };
-    return Math;
+    return MathHelpers;
 }());
-exports.Math = Math;
+exports.MathHelpers = MathHelpers;
 //# sourceMappingURL=math.js.map

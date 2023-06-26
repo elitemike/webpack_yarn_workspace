@@ -1,1 +1,2 @@
-export { Math } from "./math";
+export { MathHelpers } from "./math";
+import { MathHelpers } from './math';

@@ -1,1 +1,1 @@
-export { Math } from "./math";
+export { MathHelpers } from "./math";

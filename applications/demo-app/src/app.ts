@@ -1,5 +1,6 @@
 import { LogManager } from "aurelia-framework";
 import { Logger } from "aurelia-logging";
+import { MathHelpers } from "@common/utilities";
 
 const logger: Logger = LogManager.getLogger("App");
 export class App {
@@ -11,6 +12,6 @@ export class App {
   }
 
   onButtonClick() {
-    this.counter++;
+    this.counter = MathHelpers.add(5, this.counter);
   }
 }
