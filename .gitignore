@@ -8,4 +8,4 @@ node_modules
 dist
 
 syncfusion-license.txt
-
+tsconfig.tsbuildinfo
