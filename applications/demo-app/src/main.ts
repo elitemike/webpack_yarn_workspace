@@ -7,22 +7,23 @@ import { ConsoleAppender } from "aurelia-logging-console"
 
 
 bootstrap(async (aurelia: Aurelia) => {
-  LogManager.addAppender(new ConsoleAppender());
+
 
   const logger = LogManager.getLogger("bootstrapper");
 
-  logger.debug("I'm running a logger at bootstrap")
+
 
   aurelia.use.standardConfiguration().developmentLogging();
 
+
+
   aurelia.use.plugin(PLATFORM.moduleName('@ui/helpers'));
   aurelia.use.plugin(PLATFORM.moduleName("aurelia-syncfusion-ej2-bridge"), (configBuilder: ConfigBuilder) => configBuilder.useDefaults());
-
-  registerLicense("");
 
   // eslint-disable-next-line no-undef
   const root = document.getElementById('app-host') as Element;
 
   await aurelia.start();
+  logger.debug("I'm now active")
   await aurelia.setRoot(App, root);
 });

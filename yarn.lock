@@ -396,6 +396,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@cerner/duplicate-package-checker-webpack-plugin@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "@cerner/duplicate-package-checker-webpack-plugin@npm:2.3.0"
+  dependencies:
+    chalk: ^4.1.0
+    find-root: ^1.0.0
+    lodash.groupby: ^4.6.0
+    semver: ^7.3.4
+  peerDependencies:
+    webpack: ^4.30.0 || ^5.0.0
+  checksum: f7a666639e916b13b4c01b1eea52fff69fd9443237bceb14ad161817547b7912c6a5af1ada3e8873b7e10646dc8dcba991ba9ffbe4923b06cb82d3823e0f83d6
+  languageName: node
+  linkType: hard
+
 "@common/ui@0.1.0, @common/ui@workspace:packages/common-ui":
   version: 0.0.0-use.local
   resolution: "@common/ui@workspace:packages/common-ui"
@@ -4177,6 +4191,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "demo-app@workspace:applications/demo-app"
   dependencies:
+    "@cerner/duplicate-package-checker-webpack-plugin": ^2.3.0
     "@syncfusion/ej2": ^22.1.34
     "@types/node": ^18.11.18
     "@types/webpack": ^5.28.0
@@ -7620,6 +7635,13 @@ __metadata:
   dependencies:
     p-locate: ^5.0.0
   checksum: 72eb661788a0368c099a184c59d2fee760b3831c9c1c33955e8a19ae4a21b4116e53fa736dc086cdeb9fce9f7cc508f2f92d2d3aae516f133e16a2bb59a39f5a
+  languageName: node
+  linkType: hard
+
+"lodash.groupby@npm:^4.6.0":
+  version: 4.6.0
+  resolution: "lodash.groupby@npm:4.6.0"
+  checksum: e2d4d13d12790a1cacab3f5f120b7c072a792224e83b2f403218866d18efde76024b2579996dfebb230a61ce06469332e16639103669a35a605287e19ced6b9b
   languageName: node
   linkType: hard
 

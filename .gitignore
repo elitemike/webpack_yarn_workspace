@@ -5,3 +5,6 @@
 !.yarn/sdks
 !.yarn/versions
 node_modules
+dist
+
+syncfusion-license.txt
