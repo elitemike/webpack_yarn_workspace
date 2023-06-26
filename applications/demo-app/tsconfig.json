@@ -3,7 +3,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "composite": false,
-    "rootDir": ".",
+    // "rootDir": ".",
     "outDir": "./dist",
     "sourceRoot": "src",
     "baseUrl": ".",
@@ -17,6 +17,9 @@
   },
   "include": [
     "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
   ],
   "references": [
     {

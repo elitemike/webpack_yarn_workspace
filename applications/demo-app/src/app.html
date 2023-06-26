@@ -1,7 +1,12 @@
 <template>
+  <require from="@syncfusion/ej2/material.css"></require>
   <h1>${message}</h1>
   <name-card name.bind="counter">
 
   </name-card>
-  <button click.delegate="onButtonClick()">click me</button>
+  <h4>
+    Syncfusion button
+  </h4>
+  <ej2-button on-click.delegate="onButtonClick()">Click me</ej2-button>
+  <!-- <button click.delegate="onButtonClick()">click me</button> -->
 </template>

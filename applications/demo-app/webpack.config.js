@@ -174,7 +174,7 @@ module.exports = ({ production }, { analyze, hmr, port, host }) => ({
     // serve index.html for all 404 (required for push-state)
     historyApiFallback: true,
     open: false,
-    hot: hmr,
+    hot: false,
     port: 8080,
     host: host
   },
@@ -203,7 +203,7 @@ module.exports = ({ production }, { analyze, hmr, port, host }) => ({
       // Skip minimize in production build to avoid complain on unescaped < such as
       // <span>${ c < 5 ? c : 'many' }</span>
       { test: /\.html$/i, loader: 'html-loader', options: { minimize: false, esModule: false } },
-      { test: /\.ts$/, loader: "ts-loader" },
+      { test: /\.ts$/, loader: "ts-loader", exclude: /node_modules/ },
       // embed small images and fonts as Data Urls and larger ones as files:
       { test: /\.(png|svg|jpg|jpeg|gif)$/i, type: 'asset' },
       { test: /\.(woff|woff2|ttf|eot|svg|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/i, type: 'asset' },

@@ -1,24 +1,24 @@
 {
-    "compilerOptions": {
-        "esModuleInterop": true,
-        "typeRoots": [
-            "./node_modules/@types"
-        ],
-        "removeComments": true,
-        "rootDir": ".",
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "sourceMap": true,
-        "target": "ES5",
-        "moduleResolution": "node",
-        "resolveJsonModule": true,
-        "importHelpers": true,
-        "allowJs": true,
-        "composite": true,
-        "skipLibCheck": true,
-        "lib": [
-            "dom",
-            "es6"
-        ]
-    }
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "removeComments": true,
+    "rootDir": ".",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "target": "ES5",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "allowJs": true,
+    "composite": true,
+    "skipLibCheck": true,
+    "lib": [
+      "dom",
+      "es6"
+    ]
+  }
 }
